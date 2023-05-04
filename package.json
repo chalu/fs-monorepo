@@ -1,24 +1,17 @@
 {
-  "name": "with-docker",
-  "version": "0.0.0",
   "private": true,
   "scripts": {
     "build": "turbo run build",
-    "clean": "turbo run clean",
     "dev": "turbo run dev",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo run lint",
-    "test": "turbo run test"
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
-  "dependencies": {},
   "devDependencies": {
+    "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
-    "prettier": "latest",
+    "prettier": "^2.5.1",
     "turbo": "latest"
   },
-  "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=7.0.0"
-  },
-  "packageManager": "pnpm@8.3.1"
+  "packageManager": "pnpm@7.15.0",
+  "name": "fs-monorepo"
 }

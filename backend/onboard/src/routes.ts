@@ -8,5 +8,11 @@ router.get('/', (_req, res) => {
   });
 });
 
+router.get('/greet', (_req, res) => {
+  return res.json({
+    message: 'Hello You!'
+  });
+});
+
 export default router;
 

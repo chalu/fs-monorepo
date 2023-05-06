@@ -1,17 +1,15 @@
 {
-  "private": true,
+  "name": "fs-monorepo",
+  "version": "1.0.0",
+  "description": "Sample fulstack monorepo",
+  "main": "index.js",
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "start": "pnpm --stream -r start",
+    "start:dev": "pnpm --parallel --stream -r run start:dev",
+    "build": "pnpm --stream -r run build",
+    "clean": "pnpm -r run clean"
   },
-  "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-custom": "workspace:*",
-    "prettier": "^2.5.1",
-    "turbo": "latest"
-  },
-  "packageManager": "pnpm@7.15.0",
-  "name": "fs-monorepo"
+  "keywords": [],
+  "author": "chaluwa@gmail.com",
+  "license": "MIT"
 }
